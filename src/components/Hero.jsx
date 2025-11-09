@@ -1,5 +1,6 @@
 import React from 'react';
 import { Rocket, Users, Sparkles } from 'lucide-react';
+import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
   return (
@@ -46,13 +47,14 @@ const Hero = () => {
             </div>
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-6">
-            <div className="relative">
+            <div className="relative rounded-2xl border border-gray-100 bg-white shadow-sm">
               <div className="absolute -inset-4 bg-gradient-to-tr from-indigo-100 to-purple-100 rounded-3xl blur-2xl opacity-70 pointer-events-none" />
-              <img
-                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1470&auto=format&fit=crop"
-                alt="Mentorship collaboration"
-                className="relative rounded-2xl shadow-lg ring-1 ring-black/5"
-              />
+              <div className="relative h-[420px] sm:h-[520px] w-full overflow-hidden rounded-2xl">
+                <Spline
+                  scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
+                  style={{ width: '100%', height: '100%' }}
+                />
+              </div>
             </div>
           </div>
         </div>
